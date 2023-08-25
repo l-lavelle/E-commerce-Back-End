@@ -6,7 +6,10 @@ class Category extends Model {}
 
 Category.init(
   {
-    // define columns
+    id:{
+      type:DataTypes.STRING,
+      allowNull:false
+    }
   },
   {
     sequelize,
@@ -18,3 +21,5 @@ Category.init(
 );
 
 module.exports = Category;
+
+// validate cateogry are we adding data?
