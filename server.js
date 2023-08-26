@@ -18,3 +18,5 @@ sequelize.sync().then(()=>{
 
 // https://www.youtube.com/watch?v=HJGWu0cZUe8
 // https://sequelize.org/docs/v6/advanced-association-concepts/advanced-many-to-many/
+
+// how is the model being created not calling in server file?
