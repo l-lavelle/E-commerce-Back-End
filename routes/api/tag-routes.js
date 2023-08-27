@@ -5,43 +5,68 @@ const { findByPk } = require('../../models/Product');
 // The `/api/tags` endpoint
 
 router.get('/', async (req, res) => {
-  const tagData=await Tag.findAll()
-  return res.json(tagData)
+  try{
+    const tagData=await Tag.findAll()
+    return res.json(tagData)
+  }catch(err){
+    console.log(err);
+    return res.json(err);
+  }
   // be sure to include its associated Product data
 });
 
 router.get('/:id', async (req, res) => {
-  const tagid = await Tag.findByPk(req.params.id)
-  return res.json(tagid)
+  try{
+    const tagid = await Tag.findByPk(req.params.id)
+    return res.json(tagid)
+  }catch (err){
+    console.log(err);
+    return res.json(err);
+  }
   // be sure to include its associated Product data
 });
 
 router.post('/', async (req, res) => {
-  const tagData= await Tag.create({
+  try{
+    const tagData= await Tag.create({
     tag_name:req.body.tag_name
-  })
-  return res.json(tagData)
+     })
+    return res.json(tagData)
+  }catch (err){
+    console.log(err);
+    return res.json(err);
+  }
 });
 
 router.put('/:id', async (req, res) => {
-  const updatedCategory = await Tag.update({
+  try{
+    const updatedCategory = await Tag.update({
     tag_name:req.body.tag_name
-  },
-  {
-    where:{
-      id:req.params.id
-    }
-  })
-  return res.json(updatedCategory)
+    },
+    {
+      where:{
+        id:req.params.id
+      }
+    })
+    return res.json(updatedCategory)
+  }catch(err){
+    console.log(err);
+    return res.json(err);
+  }
 });
 
 router.delete('/:id', async (req, res) => {
-  const deleteCategory = await Tag.destroy({
+  try{
+    const deleteCategory = await Tag.destroy({
     where:{
       id:req.params.id
     }
-  })
-  return res.json(deleteCategory)
+    })
+    return res.json(deleteCategory)
+  }catch (err){
+    console.log(err);
+    return res.json(err);
+  }
 });
 
 module.exports = router;
