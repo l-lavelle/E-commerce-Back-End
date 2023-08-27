@@ -28,4 +28,4 @@ Category.init(
 
 module.exports = Category;
 
-// validate cateogry are we adding data?
+

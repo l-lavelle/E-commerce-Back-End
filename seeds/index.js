@@ -25,4 +25,3 @@ const seedAll = async () => {
 
 seedAll();
 
-// to run seeds npm run seeds

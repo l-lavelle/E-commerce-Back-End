@@ -20,3 +20,8 @@ sequelize.sync().then(()=>{
 // https://sequelize.org/docs/v6/advanced-association-concepts/advanced-many-to-many/
 
 // how is the model being created not calling in server file?
+// what is this for ? const { findByPk } = require('../../models/Product');
+
+// to run seeds npm run seeds
+// validate cateogry are we adding data?
+// check product post and update 
