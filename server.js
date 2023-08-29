@@ -22,3 +22,4 @@ sequelize.sync().then(()=>{
 // what is this for ? const { findByPk } = require('../../models/Product');
 
 
+

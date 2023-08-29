@@ -49,4 +49,4 @@ https://www.youtube.com/watch?v=HJGWu0cZUe8<br>
 https://sequelize.org/docs/v6/advanced-association-concepts/advanced-many-to-many/
 
 ## Walkthrough Video
-[Video Demonstration](https://drive.google.com/file/d/1j9VjH8eKwctwUK388fxgsK8ZGTshEF0B/view)
+[Video Demonstration](https://drive.google.com/file/d/1Gr3b5qzcWNTdp2e1F4rOlTOjKyQxo9Tp/view)
